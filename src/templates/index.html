@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+<div class="container theme-showcase col-sm-6 col-sm-offset-3" role="main">
+    <div class="container theme-showcase col-sm-6 col-sm-offset-3" role="main">
+
+        <div class="panel-body">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="your-name">Your name</label>
+                    <input type="text" class="form-control" id="your-name" name="your-name"
+                           placeholder="Place your name here">
+                </div>
+                <input  class="conf-but" type="submit" value="Say Hi!" aria-describedby="basic-addon1">
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{%if users|length > 0%}
+<h2 align="center">Users with whom we have already seen:</h2>
+<br>
+{% for user in users %}
+ <li class="structured-list">{{user.name}}</li>
+{% endfor %}
+
+{%else %}
+<h3 align="center"> We no have users yet</h3>>
+{%endif%}
+
+{% endblock %}
